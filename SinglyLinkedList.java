@@ -65,7 +65,7 @@ class SinglyLinkedList {
     }
     
     /**
-     * Returns the length of the list.
+     * Returns the length of the list, i.e., the number of nodes in the list.
      * 
      * @return the length of the list 
      */
