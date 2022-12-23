@@ -1,3 +1,9 @@
+/**
+ * @author A. Salamanis (athanasios.salamanis@gmail.com)
+ * @version 0.2
+ * @since 2022-12-24
+ */
+
 public class Application {
     public static void main(String[] args) {
         System.out.println("Begin testing the singly linked list implementation");
