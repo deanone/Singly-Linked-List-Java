@@ -1,34 +1,8 @@
 /**
  * @author A. Salamanis (athanasios.salamanis@gmail.com)
- * @version 0.1
- * @since 2019-06-20
+ * @version 0.2
+ * @since 2022-12-24
  */
-
-/**
- * Node class: A class representing a node of the singly linked list. 
- */
-class Node {
-    int val;
-    Node next;
-    
-    /**
-     * Constructor. 
-     */
-    Node() {
-        val = 0;
-        next = null;
-    }
-    
-    /**
-     * Constructor.
-     * 
-     * @param val the initial value of the node
-     */
-    Node(int val) {
-        this.val = val;
-        next = null;
-    }
-}
 
 /**
  * SinglyLinkedList class: A class representing a singly linked list. 
@@ -40,7 +14,7 @@ class SinglyLinkedList {
     Node head;
 
     /**
-     * the length of the list, i.e., the number of nodes in the list
+     * The number of nodes in the list
      */
     int length;
     
@@ -65,7 +39,7 @@ class SinglyLinkedList {
     }
     
     /**
-     * Returns the length of the list, i.e., the number of nodes in the list.
+     * Returns the length of the list.
      * 
      * @return the length of the list 
      */
@@ -219,15 +193,5 @@ class SinglyLinkedList {
             current.next = current.next.next;
             this.length--;
         }
-    }
-
-    public static void main(String[] args) {
-        SinglyLinkedList myLinkedList = new SinglyLinkedList();
-        myLinkedList.addAtHead(1);
-        myLinkedList.addAtTail(3);
-        myLinkedList.addAtIndex(1, 2);    // linked list becomes 1->2->3
-        myLinkedList.get(1);              // return 2
-        myLinkedList.deleteAtIndex(1);    // now the linked list is 1->3
-        myLinkedList.get(1);              // return 3    
     }
 }
