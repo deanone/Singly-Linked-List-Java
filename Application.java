@@ -4,8 +4,20 @@
  * @since 2022-12-24
  */
 
-public class Application {
-    public static void main(String[] args) {
+public final class Application {
+
+    /**
+     * Application is just a utility class, hence the private constructor.
+     */
+    private Application() {
+    }
+
+    /**
+     * The starting point of the application.
+     *
+     * @param args the input arguments for the application.
+     */
+    public static void main(final String[] args) {
         System.out.println("Begin testing the singly linked list implementation");
         System.out.println();
 
@@ -47,7 +59,7 @@ public class Application {
         System.out.println();
 
         System.out.println("7. Get the value of node 1");
-        val = myLinkedList.get(1);              // return 3    
+        val = myLinkedList.get(1);              // return 3
         System.out.println("Returned value: " + val);
         System.out.println("Current list:");
         myLinkedList.print();
